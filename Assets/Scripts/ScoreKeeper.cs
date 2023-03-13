@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ public class ScoreKeeper : MonoBehaviour
 
     public void UpdateScore()
     {
-        this.scoreText.text = $"Score: {this.ScorePercentage:F1}%";
+        this.scoreText.text = $"Score: {String.Format("{0:0.##}", this.ScorePercentage)}%";
     }
 
     public int QuestionsCount

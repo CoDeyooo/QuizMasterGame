@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] float secondsToAnswer = 20f;
-    [SerializeField] float secondsToReview = 10f;
+    [SerializeField] float secondsToAnswer = 15f;
+    [SerializeField] float secondsToReview = 5f;
 
     public bool isPlayerAnswering;
     private float imageFillAmount;

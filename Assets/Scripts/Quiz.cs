@@ -35,9 +35,6 @@ public class Quiz : MonoBehaviour
     public void OnAnswerSelected(int index)
     {
         this.DisplayAnswer(index);
-        this.isAnswerDisplayed = true;
-        this.timer.ImageFillAmount = 0;
-        this.SetButtonsInteractability(false);
     }
 
     private void Awake()
@@ -66,7 +63,6 @@ public class Quiz : MonoBehaviour
             else
             {
                 this.DisplayAnswer(-1);
-                this.isAnswerDisplayed = true;
             }
         }
         else
@@ -167,6 +163,9 @@ public class Quiz : MonoBehaviour
 
         var buttonImage = this.answerButtons[this.correctAnswerIndex].GetComponent<Image>();
         buttonImage.sprite = this.correctAnswerSprite;
+        this.isAnswerDisplayed = true;
+        this.SetButtonsInteractability(false);
+        this.timer.ImageFillAmount = 0;
     }
 
     private void ResetButtonSprite()

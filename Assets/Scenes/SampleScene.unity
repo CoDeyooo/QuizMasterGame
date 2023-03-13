@@ -1304,8 +1304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2512e21666c0ec34c820b788b800856a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToAnswer: 20
-  secondsToReview: 10
+  secondsToAnswer: 10
+  secondsToReview: 5
   isPlayerAnswering: 0
 --- !u!4 &1433322783
 Transform:
